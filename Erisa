@@ -2,9 +2,9 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "5eArgentDawn",
-				"abbreviation": "5eAD",
-				"full": "5e Argent Dawn",
+				"json": "ERISA",
+				"abbreviation": "ERISA",
+				"full": "ERISA",
 				"version": "1.0.0",
 				"authors": [
 					"Renor92"
@@ -14,7 +14,12 @@
 				]
 			}
 		],
+		"dateAdded": 1683995660,
+		"dateLastModified": 1693666789,
+		"_dateLastModifiedHash": "337635c366"
 	},
+	"monster": [
+		{
 	"name": "Holy Paladin",
 	"source": "",
 	"page": 0,
