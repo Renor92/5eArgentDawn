@@ -1,4 +1,20 @@
 {
+	"_meta": {
+		"sources": [
+			{
+				"json": "5eArgentDawn",
+				"abbreviation": "5eAD",
+				"full": "5e Argent Dawn",
+				"version": "1.0.0",
+				"authors": [
+					"Renor92"
+				],
+				"convertedBy": [
+					"Renor92"
+				]
+			}
+		],
+	},
 	"name": "Holy Paladin",
 	"source": "",
 	"page": 0,
