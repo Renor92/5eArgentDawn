@@ -1,0 +1,248 @@
+{
+	"name": "Holy Paladin",
+	"source": "",
+	"page": 0,
+	"size": [
+		"M"
+	],
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"any race"
+		]
+	},
+	"alignment": [
+		"L",
+		"G"
+	],
+	"ac": [
+		{
+			"ac": 21,
+			"from": [
+				"{@item plate armor|PHB}",
+				"{@item shield|PHB}"
+			]
+		}
+	],
+	"hp": {
+		"average": 210,
+		"formula": "20d8 + 100"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": {
+		"special": ": 20 (+5)"
+	},
+	"dex": {
+		"special": ": 10 (+0)"
+	},
+	"con": {
+		"special": ": 20 (+5)"
+	},
+	"int": {
+		"special": ": 12 (+1)"
+	},
+	"wis": {
+		"special": ": 18 (+4)"
+	},
+	"cha": {
+		"special": ": 20 (+5)"
+	},
+	"skill": {
+		"insight": "+10",
+		"medicine": "+10",
+		"persuasion": "+11"
+	},
+	"passive": 14,
+	"resist": [
+		"radiant"
+	],
+	"languages": [
+		"Common",
+		"Celestial",
+		"and any two other languages"
+	],
+	"cr": "14",
+	"pbNote": "+6",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"type": "spellcasting",
+			"headerEntries": [
+				"The paladin is a 14th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 19}, {@hit 11} to hit with spell attacks). The paladin has the following paladin spells prepared:"
+			],
+			"spells": {
+				"1": {
+					"slots": 4,
+					"spells": [
+						"{@spell bless}",
+						"{@spell cure wounds}",
+						"{@spell shield of faith}"
+					]
+				},
+				"2": {
+					"slots": 3,
+					"spells": [
+						"{@spell lesser restoration}",
+						"{@spell zone of truth}",
+						"{@spell hold person}"
+					]
+				},
+				"3": {
+					"slots": 3,
+					"spells": [
+						"{@spell dispel magic}",
+						"{@spell revivify}",
+						"{@spell spirit guardians}"
+					]
+				},
+				"4": {
+					"slots": 3,
+					"spells": [
+						"{@spell aura of purity}",
+						"{@spell death ward}",
+						"{@spell guardian of faith}"
+					]
+				},
+				"5": {
+					"slots": 2,
+					"spells": [
+						"{@spell commune}",
+						"{@spell dispel evil and good}"
+					]
+				}
+			},
+			"ability": "cha"
+		}
+	],
+	"trait": [
+		{
+			"name": "Divine Smite (3/Day)",
+			"entries": [
+				"When the paladin hits a creature with a melee weapon attack, it can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 18 ({@damage 4d8}) radiant damage."
+			]
+		},
+		{
+			"name": "Aura of Devotion",
+			"entries": [
+				"Friendly creatures within 10 feet of the paladin can't be {@condition charmed} while the paladin is conscious."
+			]
+		},
+		{
+			"name": "Aura of Courage",
+			"entries": [
+				"Friendly creatures within 10 feet of the paladin can't be {@condition frightened} while the paladin is conscious."
+			]
+		},
+		{
+			"name": "Lay on Hands (5/Day)",
+			"entries": [
+				"The paladin can restore a total of 100 hit points, divided as the paladin chooses. Alternatively, the paladin can expend 5 hit points from its pool of healing to cure the target of one disease or neutralize one poison affecting it."
+			]
+		},
+		{
+			"name": "Avenging Wrath (Recharges after a Short or Long Rest)",
+			"entries": [
+				"As a bonus action, the paladin can enter a state of divine wrath for 1 minute. While in this state, the paladin has advantage on attack rolls and all of its melee weapon attacks deal an additional 9 ({@damage 2d8}) radiant damage. Additionally, the paladin gains a flying speed of 30 feet."
+			]
+		},
+		{
+			"name": "Beacon of Light",
+			"entries": [
+				"As a bonus action, the paladin can choose one creature within 60 feet to be its beacon of light for 1 minute. Whenever the paladin heals a creature using a spell or its Lay on Hands feature, the beacon of light regains hit points equal to half the amount healed."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The paladin makes three melee attacks."
+			]
+		},
+		{
+			"name": "Holy Sword",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 5}) slashing damage plus 9 ({@damage 2d8}) radiant damage."
+			]
+		},
+		{
+			"name": "Shield Bash",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 5}) bludgeoning damage, and the target must succeed on a {@dc 19} Strength saving throw or be knocked {@condition prone}."
+			]
+		},
+		{
+			"name": "Healing Light {@recharge 5}",
+			"entries": [
+				"The paladin can unleash a burst of holy energy. Each friendly creature within 30 feet regains 40 ({@dice 8d8 + 4}) hit points."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Divine Protection",
+			"entries": [
+				"When a creature within 10 feet of the paladin takes damage, the paladin can reduce that damage by 10 ({@dice 2d10})."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Heal (Costs 1 Action)",
+			"entries": [
+				"The paladin heals itself or an ally within 30 feet for 20 hit points."
+			]
+		},
+		{
+			"name": "Move (Costs 1 Action)",
+			"entries": [
+				"The paladin moves up to its speed without provoking opportunity attacks."
+			]
+		},
+		{
+			"name": "Holy Smite (Costs 2 Actions)",
+			"entries": [
+				"The paladin makes a melee weapon attack."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"CE",
+		"X"
+	],
+	"damageTags": [
+		"B",
+		"R",
+		"S"
+	],
+	"damageTagsSpell": [
+		"N",
+		"R"
+	],
+	"spellcastingTags": [
+		"CP"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"conditionInflictSpell": [
+		"paralyzed"
+	],
+	"savingThrowForced": [
+		"strength"
+	],
+	"savingThrowForcedSpell": [
+		"charisma",
+		"dexterity",
+		"wisdom"
+	]
+}
